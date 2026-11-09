@@ -1,0 +1,64 @@
+﻿BOOST PC - mode d'emploi
+========================
+
+INSTALLATION SUR UN PC
+1. Copier le dossier BoostPC entier (depuis la clé) sur le PC, par exemple sur le Bureau.
+   La clé peut ensuite être retirée.
+2. Dans le dossier copié, double-cliquer sur LANCER.bat.
+3. Fenêtre Windows « Autoriser cette application... » :
+   - OUI si vous avez un compte / mot de passe administrateur -> toutes les options
+   - NON sinon -> MODE LIMITÉ (options grisées indisponibles)
+
+LA FENÊTRE DE CHOIX
+Une fenêtre s'ouvre avec toutes les options en cases à cocher :
+- cliquer sur une case pour la cocher ou la décocher
+- boutons rapides : Recommandé (rapide, sans risque), Complet (long : 1 à 3 h),
+  Tout cocher, Tout décocher
+- Diagnostic seul : ne modifie rien, fait juste le rapport
+- LANCER : exécute les options cochées (la suite se passe dans la fenêtre noire)
+Les options grisées demandent les droits administrateur.
+Le choix est mémorisé dans le dossier (fichier choix.txt) et recoché au lancement suivant.
+Astuce : réglez vos options une fois en lançant depuis la clé, puis copiez le dossier :
+tous les PC auront la même sélection par défaut.
+Les options qui posent des questions (6 et 22) passent en premier ;
+ensuite le programme travaille seul et on peut laisser le PC.
+
+LES OPTIONS
+ 1  Fichiers temporaires et caches des navigateurs (mots de passe et favoris conservés)
+ 2  Vider la corbeille (définitif)
+ 3  Cache des mises à jour Windows                                         [admin]
+ 4  Nettoyage de disque Windows : Windows.old, anciennes mises à jour      [admin, long]
+ 5  Désactiver au démarrage les programmes inutiles connus (Spotify, Steam, Teams perso...)
+ 6  Passer en revue chaque programme du démarrage et choisir O/N
+ 7  Désactiver les tâches de mise à jour cachées (Adobe, CCleaner...)      [admin]
+    (les mises à jour de Chrome, Edge et Firefox sont conservées pour la sécurité)
+ 8  Activer le démarrage rapide de Windows                                 [admin]
+ 9  Réduire à 3 s l'attente du menu de démarrage                           [admin]
+10  Mode Performances élevées (ignoré sur les portables)
+11  Couper pubs et suggestions de Windows
+12  Couper l'indexation de recherche, uniquement sur disque dur HDD        [admin]
+13  Réduire les effets visuels (moins joli, plus réactif)
+14  Couper les applications en arrière-plan
+15  Supprimer les applis préinstallées (Candy Crush, Xbox, Solitaire...)   [admin]
+16  Réduire la télémétrie Microsoft                                        [admin]
+17  Point de restauration avant les modifications                          [admin]
+18  Analyse antivirus rapide Windows Defender                              [admin]
+19  Installer les mises à jour Windows en attente                          [admin, long]
+20  Réparer les fichiers Windows (DISM + SFC)                              [admin, long]
+21  Optimiser le disque (défragmentation HDD / TRIM SSD)                   [admin, long]
+22  Supprimer les profils d'utilisateurs inutilisés depuis 3 mois          [admin]
+    ATTENTION : efface les documents de ces comptes. Liste affichée puis
+    confirmation en tapant SUPPRIMER.
+
+Options 5, 6, 11, 13 et 14 : elles s'appliquent au compte qui lance le programme
+(en mode admin, la 14 s'applique à tous les comptes).
+Rien n'est désinstallé au démarrage : tout se réactive dans le Gestionnaire des tâches
+(Ctrl+Maj+Échap > onglet Démarrage).
+
+RAPPORTS
+Un rapport par lancement est enregistré dans le sous-dossier Rapports (nom du PC + date),
+avec le diagnostic et des conseils matériel (disque dur, mémoire...).
+
+EN CAS DE MESSAGE
+« Windows a protégé votre ordinateur » : Informations complémentaires > Exécuter quand même.
+La fenêtre se ferme aussitôt : PowerShell est probablement bloqué par l'établissement.
